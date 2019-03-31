@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_02_MobileView_DisplayMode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_01_MobileViewBase", "4_01_MobileViewBase\4_01_MobileViewBase.csproj", "{110228E5-1D39-4465-A7A5-916A0ECF54F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_Input_OutputFormatters", "5_Input_OutputFormatters\5_Input_OutputFormatters.csproj", "{2DE80C55-EB08-469E-9098-64C0BDA108D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE80C55-EB08-469E-9098-64C0BDA108D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE80C55-EB08-469E-9098-64C0BDA108D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE80C55-EB08-469E-9098-64C0BDA108D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE80C55-EB08-469E-9098-64C0BDA108D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
