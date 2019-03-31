@@ -18,8 +18,7 @@ namespace _001_MobileView
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            //TODO: Manual
-            DisplayConfig.RegisterDisplayModes(DisplayModeProvider.Instance.Modes);
+            DisplayConfig.RegisterDisplayModes();
         }
     }
 }

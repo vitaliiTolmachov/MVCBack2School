@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_MobileView_DisplayModeProvider", "001_MobileView\001_MobileView_DisplayModeProvider.csproj", "{B134EECE-F511-42AA-8D52-D0DB41DB6D20}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_01_Aplication_Life_Cycle", "001_Aplication_Life_Cycle\1_01_Aplication_Life_Cycle.csproj", "{4A76C302-2DEB-409F-8844-5AB65ED1F5C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_01_HttpModule", "2_01_HttpModule\2_01_HttpModule.csproj", "{5FB87BDC-622C-4A2B-899F-18FFE5D5694A}"
@@ -17,16 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_01_HttpHandler", "3_01_Ht
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3_02_NetCoreHttpHandler", "3_02_NetCoreHttpHandler\3_02_NetCoreHttpHandler.csproj", "{F42506CD-C411-4835-90F5-23702D9D5D51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_02_MobileView_DisplayModeProvider", "4_02_MobileView\4_02_MobileView_DisplayModeProvider.csproj", "{B134EECE-F511-42AA-8D52-D0DB41DB6D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_01_MobileViewBase", "4_01_MobileViewBase\4_01_MobileViewBase.csproj", "{110228E5-1D39-4465-A7A5-916A0ECF54F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A76C302-2DEB-409F-8844-5AB65ED1F5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A76C302-2DEB-409F-8844-5AB65ED1F5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A76C302-2DEB-409F-8844-5AB65ED1F5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +49,14 @@ Global
 		{F42506CD-C411-4835-90F5-23702D9D5D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F42506CD-C411-4835-90F5-23702D9D5D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F42506CD-C411-4835-90F5-23702D9D5D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B134EECE-F511-42AA-8D52-D0DB41DB6D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110228E5-1D39-4465-A7A5-916A0ECF54F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

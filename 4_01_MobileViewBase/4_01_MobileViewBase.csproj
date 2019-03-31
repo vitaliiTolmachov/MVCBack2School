@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B134EECE-F511-42AA-8D52-D0DB41DB6D20}</ProjectGuid>
+    <ProjectGuid>{110228E5-1D39-4465-A7A5-916A0ECF54F3}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_001_MobileView</RootNamespace>
-    <AssemblyName>001_MobileView</AssemblyName>
+    <RootNamespace>_4_01_MobileViewBase</RootNamespace>
+    <AssemblyName>4_01_MobileViewBase</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -125,10 +125,8 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\HttpRequestBaseExtensions.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="App_Start\DisplayConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -139,94 +137,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\images\ajax-loader.gif" />
-    <Content Include="Content\images\icons-svg\check-white.svg" />
-    <Content Include="Content\images\icons-svg\clock-black.svg" />
-    <Content Include="Content\images\icons-svg\clock-white.svg" />
-    <Content Include="Content\images\icons-svg\cloud-black.svg" />
-    <Content Include="Content\images\icons-svg\cloud-white.svg" />
-    <Content Include="Content\images\icons-svg\comment-black.svg" />
-    <Content Include="Content\images\icons-svg\comment-white.svg" />
-    <Content Include="Content\images\icons-svg\delete-black.svg" />
-    <Content Include="Content\images\icons-svg\delete-white.svg" />
-    <Content Include="Content\images\icons-svg\edit-black.svg" />
-    <Content Include="Content\images\icons-svg\edit-white.svg" />
-    <Content Include="Content\images\icons-svg\eye-black.svg" />
-    <Content Include="Content\images\icons-svg\eye-white.svg" />
-    <Content Include="Content\images\icons-svg\forbidden-black.svg" />
-    <Content Include="Content\images\icons-svg\forbidden-white.svg" />
-    <Content Include="Content\images\icons-svg\forward-black.svg" />
-    <Content Include="Content\images\icons-svg\forward-white.svg" />
-    <Content Include="Content\images\icons-svg\gear-black.svg" />
-    <Content Include="Content\images\icons-svg\gear-white.svg" />
-    <Content Include="Content\images\icons-svg\grid-black.svg" />
-    <Content Include="Content\images\icons-svg\grid-white.svg" />
-    <Content Include="Content\images\icons-svg\heart-black.svg" />
-    <Content Include="Content\images\icons-svg\heart-white.svg" />
-    <Content Include="Content\images\icons-svg\home-black.svg" />
-    <Content Include="Content\images\icons-svg\home-white.svg" />
-    <Content Include="Content\images\icons-svg\info-black.svg" />
-    <Content Include="Content\images\icons-svg\info-white.svg" />
-    <Content Include="Content\images\icons-svg\location-black.svg" />
-    <Content Include="Content\images\icons-svg\location-white.svg" />
-    <Content Include="Content\images\icons-svg\lock-black.svg" />
-    <Content Include="Content\images\icons-svg\lock-white.svg" />
-    <Content Include="Content\images\icons-svg\mail-black.svg" />
-    <Content Include="Content\images\icons-svg\mail-white.svg" />
-    <Content Include="Content\images\icons-svg\minus-black.svg" />
-    <Content Include="Content\images\icons-svg\minus-white.svg" />
-    <Content Include="Content\images\icons-svg\navigation-black.svg" />
-    <Content Include="Content\images\icons-svg\navigation-white.svg" />
-    <Content Include="Content\images\icons-svg\phone-black.svg" />
-    <Content Include="Content\images\icons-svg\phone-white.svg" />
-    <Content Include="Content\images\icons-svg\plus-black.svg" />
-    <Content Include="Content\images\icons-svg\plus-white.svg" />
-    <Content Include="Content\images\icons-svg\power-black.svg" />
-    <Content Include="Content\images\icons-svg\power-white.svg" />
-    <Content Include="Content\images\icons-svg\recycle-black.svg" />
-    <Content Include="Content\images\icons-svg\recycle-white.svg" />
-    <Content Include="Content\images\icons-svg\refresh-black.svg" />
-    <Content Include="Content\images\icons-svg\refresh-white.svg" />
-    <Content Include="Content\images\icons-svg\search-black.svg" />
-    <Content Include="Content\images\icons-svg\search-white.svg" />
-    <Content Include="Content\images\icons-svg\shop-black.svg" />
-    <Content Include="Content\images\icons-svg\shop-white.svg" />
-    <Content Include="Content\images\icons-svg\star-black.svg" />
-    <Content Include="Content\images\icons-svg\star-white.svg" />
-    <Content Include="Content\images\icons-svg\tag-black.svg" />
-    <Content Include="Content\images\icons-svg\tag-white.svg" />
-    <Content Include="Content\images\icons-svg\user-black.svg" />
-    <Content Include="Content\images\icons-svg\user-white.svg" />
-    <Content Include="Content\images\icons-svg\video-black.svg" />
-    <Content Include="Content\images\icons-svg\video-white.svg" />
-    <Content Include="Content\jquery.mobile-1.4.5.css" />
-    <Content Include="Content\jquery.mobile-1.4.5.min.css" />
-    <Content Include="Content\jquery.mobile.external-png-1.4.5.css" />
-    <Content Include="Content\jquery.mobile.external-png-1.4.5.min.css" />
-    <Content Include="Content\jquery.mobile.icons-1.4.5.css" />
-    <Content Include="Content\jquery.mobile.icons-1.4.5.min.css" />
-    <Content Include="Content\jquery.mobile.inline-png-1.4.5.css" />
-    <Content Include="Content\jquery.mobile.inline-png-1.4.5.min.css" />
-    <Content Include="Content\jquery.mobile.inline-svg-1.4.5.css" />
-    <Content Include="Content\jquery.mobile.inline-svg-1.4.5.min.css" />
-    <Content Include="Content\jquery.mobile.structure-1.4.5.css" />
-    <Content Include="Content\jquery.mobile.structure-1.4.5.min.css" />
-    <Content Include="Content\jquery.mobile.theme-1.4.5.css" />
-    <Content Include="Content\jquery.mobile.theme-1.4.5.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.3.1-vsdoc.js" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <Content Include="Scripts\jquery.mobile-1.4.5.js" />
-    <Content Include="Scripts\jquery.mobile-1.4.5.min.js" />
-    <Content Include="Scripts\jquery.mobile-1.4.5.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -247,8 +168,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Index.Mobile.cshtml" />
-    <None Include="Views\Shared\_Layout.Mobile.cshtml" />
+    <Content Include="Views\Home\Index.mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -283,9 +203,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>34051</DevelopmentServerPort>
+          <DevelopmentServerPort>15516</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:34051/</IISUrl>
+          <IISUrl>http://localhost:15516/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
