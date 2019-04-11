@@ -1,0 +1,24 @@
+az login
+---To see all the locations
+az account list-locations --output table
+
+az group create --name "MVCBack2School" --location "West Europe"
+az keyvault create --name "mvcKeyVault" --resource-group "MVCBack2School" --location "West Europe"
+az keyvault secret set --vault-name "mvcKeyVault" --name "AppSecret" --value "MySecret"
+
+---To view the value contained in the secret as plain text:
+az keyvault secret show --name "AppSecret" --vault-name "mvcKeyVault"
+
+--To create the identity for this application, run the assign-identity command
+az webapp identity assign --name "<YourAppName>" --resource-group "MVCBack2School"
+Output:
+{
+  "principalId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "type": "SystemAssigned"
+}
+
+--Assign permissions to your app
+az keyvault set-policy --name "mvcKeyVault --object-id <PrincipalId> --secret-permissions get list
+
+--Publish app to Azure
