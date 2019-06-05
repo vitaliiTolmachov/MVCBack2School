@@ -44,6 +44,7 @@ namespace _2_03_NetCoreMiddleware
                         $"</div>");
 
                     await next();
+
                 });
 
             app.Use(

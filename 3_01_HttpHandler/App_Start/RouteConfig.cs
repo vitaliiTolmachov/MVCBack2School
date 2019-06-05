@@ -23,11 +23,11 @@ namespace _3_01_HttpHandler
         }
     }
 
-    //public class HandlerProvider : IRouteHandler
-    //{
-    //    public IHttpHandler GetHttpHandler(RequestContext requestContext)
-    //    {
-    //        return new MyHttpHandler();
-    //    }
-    //}
+    public class HandlerProvider : IRouteHandler
+    {
+        public IHttpHandler GetHttpHandler(RequestContext requestContext)
+        {
+            return new MyHttpHandler();
+        }
+    }
 }

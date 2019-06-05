@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
-using _5_Input_OutputFormatters.Formatters;
+using _5_TypeConverter.Formatters;
 
-namespace _5_Input_OutputFormatters
+namespace _5_TypeConverter
 {
     public class Startup
     {
@@ -26,15 +26,7 @@ namespace _5_Input_OutputFormatters
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(
-                options =>
-                {
-                    //options.OutputFormatters.Insert(0,new CustomOutputFormatter());
-                    options.OutputFormatters.Add(new CustomOutputFormatter());
-                    options.InputFormatters.Add(new CustomInputFormatter());
-                    options.FormatterMappings.SetMediaTypeMappingForFormat("cu-for", MediaTypeHeaderValue.Parse("text/cu-for"));
-
-                }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -9,10 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.Net.Http.Headers;
-using _5_Input_OutputFormatters.Formatters;
 
-namespace _5_Input_OutputFormatters
+namespace _5_03_ModelBinder
 {
     public class Startup
     {
@@ -27,14 +25,11 @@ namespace _5_Input_OutputFormatters
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(
-                options =>
-                {
-                    //options.OutputFormatters.Insert(0,new CustomOutputFormatter());
-                    options.OutputFormatters.Add(new CustomOutputFormatter());
-                    options.InputFormatters.Add(new CustomInputFormatter());
-                    options.FormatterMappings.SetMediaTypeMappingForFormat("cu-for", MediaTypeHeaderValue.Parse("text/cu-for"));
-
-                }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                        options =>
+                        {
+                            options.ModelBinderProviders.Insert(0, new CustomModelBinderProvider());
+                        })
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

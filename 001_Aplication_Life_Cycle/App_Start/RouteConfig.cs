@@ -11,8 +11,8 @@ namespace _001_Aplication_Life_Cycle
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.Add(");
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
